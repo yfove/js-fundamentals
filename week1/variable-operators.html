@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //EXERCISE 1
+        //1. ask a user for their age
+        const years = prompt("What is your age?");
+
+        //2. Store the answer and convert their age age into seconds
+        const seconds = 60;
+        const minutes = 60;
+        const hour = 24;
+        const day = 30;
+        const month = 12;
+        const ageInSeconds = seconds * minutes * hour * day * month * years;
+        //3. Log into the console their age in seconds
+        console.log(ageInSeconds);
+        //4. Try concatenating the answer into sentence:
+        console.log(`Your age in seconds is: ${ageInSeconds}`);
+
+        //EXERCISE 2
+        // Write some code that finds the youngest person out three ages
+
+        function findmaxAge() {
+            const num1 = parseInt(prompt("Age of person1: "));
+            const num2 = parseInt(prompt("Age of person 2: "));
+            const num3 = parseInt(prompt("Age of person 3: "));
+        
+        // Log into the console the sentence: the youngest perosn is -- years old.
+        console.log(`the youngest person is ${Math.min(num1,num2,num3)} year old`);
+        
+        // EXERCISE 4
+        // Write some code that returns a random number between 1 and 100.
+            const random = Math.floor(Math.random()*100) + 1;
+        // Log into the console the sentence: Your random number is --.
+        console.log(`your random number is ${random}`);
+        // Bonus points for returning a whole number (no decimals).
+        // Hint: Look into Math.random and Math.round
+
+        // EXERCISE 5
+        // Write some code that adds sales tax to a price.
+        const price = prompt("Price of item is: ");
+        const taxRate = 1.08;
+        // Log into the console the sentence: "The total price with tax is $--."
+        const total = price *  taxRate;
+        // Bonus points if you can get it to show 2 decimals. (Google it!)
+
+        }
+
+    </script>
+</body>
+</html>
